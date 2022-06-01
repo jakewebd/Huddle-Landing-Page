@@ -1,0 +1,175 @@
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width:376px){
+body{
+    min-width:100vw;
+    background: url(https://raw.githubusercontent.com/jakewebd/Huddle-Landing-Page/d88b0f455cf67c5a98731533a369422c84ec5065/images/bg-desktop.svg);
+    background-color: var(--violet);
+}
+.top-top{
+    width:100vw;
+    position:relative;
+    height:5vh;
+    top:5vh;
+    left:5vw;
+}
+.logo{
+    width:15vw;
+}
+.mid-mid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+position: relative;
+padding-top:15vh;
+left:5vw;
+grid-area:1/1/1/1;
+grid-column-gap: 2vw;
+}
+.chats{
+    width:45vw;
+}
+.description{
+    font-family: 'Poppins',monospace;
+    font-weight: 700;
+    color: white;
+    grid-area:1/2/1/2;
+    position: relative;
+    top:1vh;
+}
+h1{
+    font-size: 5vh;
+}
+pre{
+    font-family: 'Open Sans',monospace;
+    font-weight: 400;
+    font-size:3vh;
+    opacity: 0.8;
+}
+button{
+    width:15vw;
+    height:8vh;
+    background-color: white;
+    border-style: none;
+    border-radius: 30px;
+    font-family: inherit;
+    color: var(--violet);
+    font-size: 2.5vh;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.3);
+}
+button:hover{
+    color: white;
+    background-color: var(--soft-magenta);
+    cursor: pointer;
+}
+.bottom{
+    display:flex;
+    justify-content: flex-end;
+    width: 40vw;
+    
+
+}
+.socials{
+    width:15vw;
+
+}
+footer{
+    font-size: 2vh;
+    margin-top:auto;
+}
+
+}
+@media screen and (max-width:375px){
+
+    body{
+        min-width:100vw;
+        background: url(https://raw.githubusercontent.com/jakewebd/Huddle-Landing-Page/d88b0f455cf67c5a98731533a369422c84ec5065/images/bg-mobile.svg);
+        background-color: var(--violet);
+        background-repeat:no-repeat ;
+    }
+    .top-top{
+        width:100vw;
+    }
+    .logo{
+        width:90px;
+        position:relative;
+        height:5vh;
+        top:5vh;
+        left:5vw;
+        margin-bottom: 10vh;
+        margin-left: 10vw;
+    }
+    .mid-mid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+    }
+    .chats{
+        position: relative;
+        display: block;
+        width:80vw;
+        margin-left: 10vw;
+    }
+    .description{
+        font-family: 'Poppins',monospace;
+        font-weight: 700;
+        color: white;
+        position: relative;
+        top:1vh;
+    }
+    h1{
+        font-size: 4vh;
+        text-align: center;
+        margin:0;
+
+    }
+    pre{
+        font-family: 'Open Sans',monospace;
+        font-weight: 400;
+        font-size:1.8vh;
+        opacity: 0.8;
+        text-align: center;
+    }
+    button{
+        width:50vw;
+        height:8vh;
+        background-color: white;
+        border-style: none;
+        border-radius: 30px;
+        font-family: inherit;
+        color: var(--violet);
+        font-size: 2.5vh;
+        box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.3);
+        position: relative;
+        left: 25%;
+        margin-top: 2vh;
+    }
+    button:hover{
+        color: white;
+        background-color: var(--soft-magenta);
+        cursor: pointer;
+    }
+    .bottom{
+        display:flex;
+        justify-content:center;
+        width: 100vw;
+        
+    
+    }
+    .socials{
+        width:50vw;
+        margin-top: 5vh;
+    
+    }
+    footer{
+        font-size: 2vh;
+        margin-top:10vh;
+    }
+
+
+
+
+}
