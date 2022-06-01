@@ -43,7 +43,7 @@ grid-column-gap: 2vw;
 h1{
     font-size: 5vh;
 }
-pre{
+.preg{
     font-family: 'Open Sans',monospace;
     font-weight: 400;
     font-size:3vh;
@@ -126,12 +126,15 @@ footer{
         margin:0;
 
     }
-    pre{
+    .preg{
         font-family: 'Open Sans',monospace;
         font-weight: 400;
         font-size:1.8vh;
         opacity: 0.8;
         text-align: center;
+    }
+    br{
+        display:none;
     }
     button{
         width:50vw;
